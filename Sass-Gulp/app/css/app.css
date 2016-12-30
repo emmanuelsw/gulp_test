@@ -1,0 +1,22 @@
+body {
+  background: #fff;
+}
+
+body p {
+  color: blue;
+}
+
+.background {
+  border-radius: 5px;
+  border: 1px solid blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.background .contenido {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
