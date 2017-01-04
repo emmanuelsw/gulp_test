@@ -13,7 +13,7 @@ gulp.task('homunculo',() => {
   .pipe(autoprefixer({
     versions: ['last 2 browsers']
   }))
-  pipe(gulp.dest('./css'))
+  .pipe(gulp.dest('./css'))
 });
 
 
@@ -31,8 +31,9 @@ gulp.task('default', () => {
   gulp.watch('./pug/**/*.pug', ['pug']);
 
   browserSync.init({
-    server: './html/'
+    server: '../gulp_test/'
   });
 
   gulp.watch('./html/*.html').on('change', browserSync.reload)
+  gulp.watch('./css/*.css').on('change', browserSync.reload)
 });

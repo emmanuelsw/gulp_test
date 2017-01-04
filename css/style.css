@@ -3,7 +3,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: red;
+  background: crimson;
   color: #000;
 }
 
@@ -29,4 +29,8 @@ body p {
       -ms-flex-direction: row;
           flex-direction: row;
   visibility: hidden;
+  border-radius: 1px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
